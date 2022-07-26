@@ -1,11 +1,10 @@
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItem";
-
+import Expenses from "./components/Expenses";
 function App() {
   return (
-    <div className="dark dark:bg-slate-800">
-      <main className="dark:bg-slate-800 px-6 py-8 h-screen w-screen">
-        <ExpenseItem />
+    <div className="dark">
+      <main className="dark:bg-black px-6 py-8 h-screen w-screen">
+        <Expenses />
       </main>
     </div>
   );

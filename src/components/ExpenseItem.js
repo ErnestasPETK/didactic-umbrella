@@ -1,12 +1,15 @@
-const ExpenseItem = () => {
+import Card from "./Card";
+import ExpenseDate from "./ExpenseDate";
+
+const ExpenseItem = (props) => {
   return (
-    <div className="dark:bg-slate-700 h-fit w-fit px-3 py-5 rounded-lg shadow-xl dark:text-white text-center">
-      <div className="dark:text-slate-500">2021-09-24</div>
+    <Card className="dark:bg-slate-700 min-h-fit h-38 min-w-fit w-36 px-3 py-5 dark:text-white text-center">
+      <ExpenseDate expenseDate={props.expenseDate} />
       <div className="mt-2">
-        <h2>Car insurance</h2>
-        <div className="dark:text-slate-300">295e</div>
+        <h2>{props.expenseTitle}</h2>
+        <div className="dark:text-slate-300">{props.expenseAmount}</div>
       </div>
-    </div>
+    </Card>
   );
 };
 
