@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Tailwind CSS framework
+
+To install the necessary package command:
+
+`npm install -D tailwindcss postcss autoprefixer`
+
+To initialize tailwind:
+
+`npx tailwindcss init -p`
+
+The folllowing config in the `tailwind.config.js` prioritizes dark theme:
+`/** @type {import('tailwindcss').Config} */ module.exports = { darkMode: "class", content: ["./src/**/*.{js,jsx,ts,tsx}"], theme: { extend: {}, }, plugins: [], };`
