@@ -1,3 +1,5 @@
+import React from "react";
+
 const ExpenseDate = (props) => {
   const year = props.expenseDate.toLocaleString("en-US", { year: "numeric" });
   const month = props.expenseDate.toLocaleString("en-US", { month: "long" });
@@ -6,7 +8,7 @@ const ExpenseDate = (props) => {
     <div className="dark:text-slate-300 dark:bg-slate-900 rounded-2xl border-2">
       <div className="font-bold text-lg">{year}</div>
       <div>{month}</div>
-      <div className="text-2xl">{day}</div>
+      <div className="text-2xl font-bold">{day}</div>
     </div>
   );
 };
