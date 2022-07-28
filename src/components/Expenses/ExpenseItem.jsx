@@ -1,7 +1,9 @@
-import Card from "./Card";
+import React, { useState } from "react";
+import Card from "../UI/Card";
 import ExpenseDate from "./ExpenseDate";
 
 const ExpenseItem = (props) => {
+
   return (
     <Card className="dark:bg-slate-700 min-h-fit h-38 min-w-fit w-36 px-3 py-5 dark:text-white text-center">
       <ExpenseDate expenseDate={props.expenseDate} />
